@@ -1,0 +1,52 @@
+<ng-container *ngIf="true">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Sr.No</th>
+                            <th>Product Name</th>
+                            <th>Product Image</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td>1</td>
+                        <td>Iphone</td>
+                        <td>some Image</td>
+                        <td>This is Branded Phone</td>
+                        <td>50,000</td>
+                        <td>1</td>
+                        <td>50,000</td>
+                        <td>
+                            <button  class="btn btn-danger"><i class="fas fa-trash-alt"></i>
+                                <span class="glyphicon glyphicon-trash"></span> Trash 
+                              </button>
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+
+<ng-container *ngIf="false">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My Cart</h5>
+        </div>
+        <div class="center">
+            <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90"
+                alt="">
+            <h4>Your Cart is Empty!</h4>
+            <h6>Add Item To It Now</h6>
+            <button (click)="onShopClick()" class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container>
